@@ -1,0 +1,17 @@
+{
+  "api/Bank.Domain.BankAccount.html": {
+    "href": "api/Bank.Domain.BankAccount.html",
+    "title": "Class BankAccount | Bank.Domain - SI784 Lab05",
+    "summary": "Class BankAccount Namespace Bank.Domain Assembly Bank.Domain.dll Representa una cuenta bancaria con operaciones de débito y crédito. public class BankAccount Inheritance object BankAccount Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors BankAccount(string, double) Inicializa el titular y el saldo de la cuenta. public BankAccount(string customerName, double balance) Parameters customerName string Nombre del titular. balance double Saldo inicial. Fields DebitAmountExceedsBalanceMessage Mensaje para un débito superior al saldo disponible. public const string DebitAmountExceedsBalanceMessage = \"Debit amount exceeds balance\" Field Value string DebitAmountLessThanZeroMessage Mensaje para un débito negativo. public const string DebitAmountLessThanZeroMessage = \"Debit amount is less than zero\" Field Value string Properties Balance Obtiene el saldo actual. public double Balance { get; } Property Value double CustomerName Obtiene el nombre del titular. public string CustomerName { get; } Property Value string Methods Credit(double) Agrega un importe al saldo de la cuenta. public void Credit(double amount) Parameters amount double Importe no negativo que se desea acreditar. Exceptions ArgumentOutOfRangeException El importe es negativo. Debit(double) Retira un importe del saldo disponible. public void Debit(double amount) Parameters amount double Importe no negativo que no supera el saldo. Exceptions ArgumentOutOfRangeException El importe es negativo o supera el saldo."
+  },
+  "api/Bank.Domain.html": {
+    "href": "api/Bank.Domain.html",
+    "title": "Namespace Bank.Domain | Bank.Domain - SI784 Lab05",
+    "summary": "Namespace Bank.Domain Classes BankAccount Representa una cuenta bancaria con operaciones de débito y crédito."
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Bank.Domain — pruebas de mutación | Bank.Domain - SI784 Lab05",
+    "summary": "Bank.Domain — pruebas de mutación Cuenta bancaria del laboratorio SI784 U2 Lab05, con xUnit y Stryker.NET. Se comprueban el titular y saldo inicial, débito parcial, total y cero; crédito positivo y cero; y las excepciones por importes inválidos con saldo intacto. Referencia de BankAccount La cobertura de líneas y ramas comprueba qué código se ejecuta. El porcentaje de mutación comprueba cuántos cambios introducidos por Stryker son detectados por las aserciones."
+  }
+}
